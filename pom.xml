@@ -65,14 +65,7 @@
                     </resources>
                 </configuration>
             </plugin>
-                 <plugin>
-<artifactId>maven-compiler-plugin</artifactId>
-<version>3.7.0</version>
-<configuration>
-<fork>true</fork>
-<executable>/opt/jdk1.8.0_152/bin/javac</executable>
-</configuration>
-</plugin>
+                
         </plugins>
     </build>
 
