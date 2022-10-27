@@ -1,4 +1,4 @@
-FROM java:8
+FROM adoptopenjdk/openjdk11 
 VOLUME /tmp
 ADD gavintest-0.0.1.jar gavintest.jar
 RUN sh -c 'touch /gavintest.jar'
