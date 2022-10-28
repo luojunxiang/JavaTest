@@ -29,7 +29,7 @@
         <commons.io.version>2.11.0</commons.io.version>
         <commons.codec.version>1.15</commons.codec.version>
         <guava.version>20.0</guava.version>
-        <fastjson.version>1.2.45</fastjson.version>
+        <fastjson.version>1.2.83</fastjson.version>
         <joda.time.version>2.10.14</joda.time.version>
         <hutool.version>5.7.22</hutool.version>
         <jsoup.version>1.11.3</jsoup.version>
