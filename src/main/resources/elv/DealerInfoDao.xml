@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="io.volkswagen.modules.elv.dao.DealerInfoDao">
+
+    <resultMap type="io.volkswagen.modules.elv.entity.DealerInfoEntity" id="dealerInfoMap">
+        <result property="id" column="id"/>
+        <result property="userName" column="user_name"/>
+        <result property="userMobible" column="user_mobible"/>
+        <result property="dealerCode" column="dealer_code"/>
+        <result property="dealerLoaction" column="dealer_loaction"/>
+        <result property="dealerProvince" column="dealer_province"/>
+        <result property="dealerCity" column="dealer_city"/>
+        <result property="dealerDistrict" column="dealer_district"/>
+        <result property="dealerEmail" column="dealer_email"/>
+        <result property="createDate" column="create_date"/>
+        <result property="creator" column="creator"/>
+        <result property="updateDate" column="update_date"/>
+        <result property="updater" column="updator"/>
+        <result property="deleteFlag" column="delete_flag"/>
+    </resultMap>
+    <select id="select" resultType="Map" >
+        select distinct di.id,di.dealer_province,di.dealer_city,di.dealer_loaction from dealer_info di
+            right join customer_info ci
+                on di.dealer_province = ci.vehicle_province and di.dealer_city = ci.vehicle_city
+                   where di.dealer_province = #{vehicleProvince,jdbcType=VARCHAR} and di.dealer_city = #{vehicleCity,jdbcType=VARCHAR}
+    </select>
+
+
+</mapper>

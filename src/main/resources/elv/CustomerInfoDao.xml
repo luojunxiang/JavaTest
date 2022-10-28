@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="io.volkswagen.modules.elv.dao.CustomerInfoDao">
+
+    <resultMap type="io.volkswagen.modules.elv.entity.CustomerInfoEntity" id="customerInfoMap">
+        <result property="id" column="id"/>
+        <result property="userName" column="user_name"/>
+        <result property="userMobile" column="user_mobile"/>
+        <result property="userEntType" column="user_ent_type"/>
+        <result property="userManType" column="user_man_type"/>
+        <result property="vehicleOwner" column="vehicle_owner"/>
+        <result property="vehicleProvince" column="vehicle_province"/>
+        <result property="vehicleCity" column="vehicle_city"/>
+        <result property="vehicleDistrict" column="vehicle_district"/>
+        <result property="userEmail" column="user_email"/>
+        <result property="vehicleCert" column="vehicle_cert"/>
+        <result property="deregistLocation" column="deregist_location"/>
+        <result property="createDate" column="create_date"/>
+        <result property="creator" column="creator"/>
+        <result property="updateDate" column="update_date"/>
+        <result property="updater" column="updator"/>
+        <result property="deleteFlag" column="delete_flag"/>
+    </resultMap>
+   <!-- <update id="updateAll" parameterType="io.volkswagen.modules.elv.dto.CustomerInfoDTO">
+        update  customer_info
+        <set>
+            <if test="userName !=null">
+                user_name = #{userName}
+            </if>
+            <if test="userMobile !=null">
+                user_mobile = #{userMobile}
+            </if>
+            <if test="userEntType !=null">
+                user_ent_type = #{userEntType}
+            </if>
+            <if test="userManType !=null">
+                user_man_type = #{userManType}
+            </if>
+            <if test="userManType !=null">
+                user_man_type = #{userManType}
+            </if>
+            <if test="vehicleOwner !=null">
+                vehicle_owner = #{vehicleOwner}
+            </if>
+            <if test="vehicleProvince !=null">
+                vehicle_province = #{vehicleProvince}
+            </if>
+            <if test="vehicleCity !=null">
+                vehicle_city = #{vehicleCity}
+            </if>
+            <if test="vehicleDistrict !=null">
+                vehicle_district = #{vehicleDistrict}
+            </if>
+            <if test="vehicleCert !=null">
+                vehicle_cert = #{vehicleCert}
+            </if>
+            <if test="deregistLocation !=null">
+                deregist_location = #{deregistLocation}
+            </if>
+        </set>
+        where user_mobile = #{userMobile}
+    </update>-->
+
+
+</mapper>

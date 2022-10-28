@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="io.volkswagen.modules.elv.dao.ErrorInfoDao">
+
+    <resultMap type="io.volkswagen.modules.elv.entity.ErrorInfoEntity" id="errorInfoMap">
+        <result property="id" column="id"/>
+        <result property="actionClass" column="action_class"/>
+        <result property="actionParam" column="action_param"/>
+        <result property="actionFunction" column="action_function"/>
+        <result property="errorMsg" column="error_msg"/>
+        <result property="createDate" column="create_date"/>
+        <result property="creator" column="creator"/>
+        <result property="updateDate" column="update_date"/>
+        <result property="updater" column="updater"/>
+        <result property="deleteFlag" column="delete_flag"/>
+    </resultMap>
+
+
+</mapper>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="io.volkswagen.modules.elv.dao.ScrappingFactoryInfoDao">
+
+    <resultMap type="io.volkswagen.modules.elv.entity.ScrappingFactoryInfoEntity" id="scrappingFactoryInfoMap">
+        <result property="id" column="id"/>
+        <result property="facProvince" column="fac_province"/>
+        <result property="facCity" column="fac_city"/>
+        <result property="facDistrict" column="fac_district"/>
+        <result property="facLocation" column="fac_location"/>
+        <result property="facName" column="fac_name"/>
+        <result property="facTel" column="fac_tel"/>
+        <result property="facTemp" column="fac_temp"/>
+        <result property="createDate" column="create_date"/>
+        <result property="creator" column="creator"/>
+        <result property="updateDate" column="update_date"/>
+        <result property="updater" column="updator"/>
+        <result property="deleteFlag" column="delete_flag"/>
+    </resultMap>
+
+
+</mapper>

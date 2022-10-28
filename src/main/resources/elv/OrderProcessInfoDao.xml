@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="io.volkswagen.modules.elv.dao.OrderProcessInfoDao">
+
+    <resultMap type="io.volkswagen.modules.elv.entity.OrderProcessInfoEntity" id="orderProcessInfoMap">
+        <result property="id" column="id"/>
+        <result property="orderId" column="order_id"/>
+        <result property="customerId" column="customer_id"/>
+        <result property="cusstomerName" column="cusstomer_name"/>
+        <result property="vechicleId" column="vechicle_id"/>
+        <result property="vechicleBrand" column="vechicle_brand"/>
+        <result property="vechicleModel" column="vechicle_model"/>
+        <result property="processStatus" column="process_status"/>
+        <result property="processOwner" column="process_owner"/>
+        <result property="processor" column="processor"/>
+        <result property="remark" column="remark"/>
+        <result property="createDate" column="create_date"/>
+        <result property="creator" column="creator"/>
+        <result property="updateDate" column="update_date"/>
+        <result property="updater" column="updater"/>
+        <result property="deleteFlag" column="delete_flag"/>
+    </resultMap>
+
+
+</mapper>
