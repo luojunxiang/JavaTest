@@ -29,8 +29,8 @@ spring:
   redis:
     database: 0
     host: 192.168.0.103
-    port: 8635
-    password:ixd1uTqS    # 密码（默认为空）
+    port: 6379
+    password: ixd1uTqS
     timeout: 6000ms  # 连接超时时长（毫秒）
     jedis:
       pool:
