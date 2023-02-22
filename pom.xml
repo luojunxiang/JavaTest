@@ -25,7 +25,7 @@
         <mybatisplus.version>3.5.2</mybatisplus.version>
         <postgre.version>42.2.5</postgre.version>
         <commons.lang.version>3.12.0</commons.lang.version>
-        <commons.fileupload.version>1.4</commons.fileupload.version>
+        <commons.fileupload.version>1.5</commons.fileupload.version>
         <commons.io.version>2.11.0</commons.io.version>
         <commons.codec.version>1.15</commons.codec.version>
         <guava.version>20.0</guava.version>
